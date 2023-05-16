@@ -68,3 +68,8 @@
   .centered-text {
     text-align: center;
   }
+
+  .btn:hover {
+    background: #bc229b;
+    color: var(--text-color-dark); 
+  }
