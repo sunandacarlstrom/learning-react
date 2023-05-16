@@ -1,3 +1,6 @@
+// Importerar specifikt css
+import "./vehicle.css"; 
+
 const Vehicle = ({ vehicle }) => {
     return (
         <li key={vehicle.id}>

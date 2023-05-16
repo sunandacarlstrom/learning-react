@@ -2,8 +2,14 @@
 
 import Home from "./components/ui/Home";
 
+import "./assets/css/style.css";
+
 const App = () => {
-    return <Home />;
+    return (
+        <article className="page">
+            <Home />
+        </article>
+    );
 };
 
 export default App;

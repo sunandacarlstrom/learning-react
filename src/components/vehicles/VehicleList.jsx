@@ -17,8 +17,7 @@ const VehicleList = () => {
 
     return (
         <>
-            <PageHeader headerText="Våra aktuella bilar i lager (VehicleList component)" />
-            <h3>Våra aktuella bilar</h3>
+            <PageHeader headerText="Våra aktuella bilar i lager" />
             <ul>
                 {vehicles.map((vehicle) => (
                     <Vehicle vehicle={vehicle} />

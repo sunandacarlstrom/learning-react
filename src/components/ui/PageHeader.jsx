@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 const PageHeader = ({headerText}) => {
-    return <h1>{headerText}</h1>
+    return <h2 className="page-title centered-text">{headerText}</h2>
 }; 
 
 // Definiera egenskapers typer och om de är obligatoriska
