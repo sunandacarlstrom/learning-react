@@ -1,3 +1,4 @@
+import React from "react";
 import PageHeader from "../ui/PageHeader";
 import Vehicle from "./Vehicle";
 
@@ -20,7 +21,10 @@ const VehicleList = () => {
             <PageHeader headerText="Våra aktuella bilar i lager" />
             <ul>
                 {vehicles.map((vehicle) => (
-                    <Vehicle vehicle={vehicle} />
+                    // skriv ut React.Fragment för att lösa problemet som uppstår med att VARJE child måste ha en unik nyckel
+                    <React.Fragment key={vehicle.id}>
+                        <Vehicle vehicle={vehicle} />
+                    </React.Fragment>
                 ))}
             </ul>
         </>
