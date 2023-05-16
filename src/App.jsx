@@ -1,13 +1,14 @@
-// Här vill jag endast rendera Home-komponenten
-
 import Home from "./components/ui/Home";
+
+// importerar datat här för att sedan skicka vidare ner i hierarkin
+import vehicles from "./data/vehicles.json";
 
 import "./assets/css/style.css";
 
 const App = () => {
     return (
         <article className="page">
-            <Home />
+            <Home vehicles={vehicles} />
         </article>
     );
 };
